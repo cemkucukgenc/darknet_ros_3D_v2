@@ -55,7 +55,7 @@ sudo apt install ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-tf r
 
 Realsense2 is required for the Intel D435 Camera.
 ```
-sudo apt install ros-noetic-realsense2-camera ros-noetic-realsense2-description
+sudo apt install ros-noetic-realsense2-camera ros-noetic-realsense2-description ros-noetic-rgbd-launch
 ```
 
 ### 2.3. Building project <a name="building_project"></a>
@@ -77,14 +77,21 @@ catkin build
 
 ## 3. Launching project <a name="launching_project"></a>
 
-To run the project (T1)
+To run the camera driver (T1)
 ```
 source /sabes_ws/darknet_ros_3D_v2/catkin_ws/devel/setup.bash
-roslaunch launch_inference launch_inference.launch
+roslaunch realsense2_camera rs_rgbd.launch
 ```
-To see the output in the ROS topic (T2)
+To run the project (T2)
 ```
 source /sabes_ws/darknet_ros_3D_v2/catkin_ws/devel/setup.bash
-rostopic echo /objects_position/message
+roslaunch darknet_ros_3d darknet_ros_3d.launch
+```
+To see the output in the ROS topic (T3)
+```
+source /sabes_ws/darknet_ros_3D_v2/catkin_ws/devel/setup.bash
+rostopic echo /darknet_ros_3d/bounding_boxes
 ```
 
+If you encounter issues with running, you can check this link
+- https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d/issues/15

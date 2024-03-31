@@ -19,7 +19,7 @@ cd sabes_ws
 ```
 Clone the project repository (T1)
 ```
-git clone git@github.com:cemkucukgenc/darknet_ros_3D_v1.git
+git clone git@github.com:cemkucukgenc/darknet_ros_3D_v2.git
 ```
 On `docker/create_container.sh`, change line 4 to your `catkin_ws_path` and line 11 to your shared volume path.
 
@@ -33,7 +33,7 @@ sudo docker pull osrf/ros:noetic-desktop-full
 ```
 Create the necessary Docker image `sabes_image_noetic` (T1)
 ```
-cd darknet_ros_3d_v1/docker
+cd darknet_ros_3D_v2/docker
 sudo docker image build -t sabes_image_noetic .
 ```
 Make the shell scripts executable (T1)
@@ -53,7 +53,7 @@ Here are some useful commands that will be needed in the further steps of runnin
 
 To reach the container on another terminal
 ```
-cd sabes_ws/darknet_ros_3d_v1/docker
+cd sabes_ws/darknet_ros_3D_v2/docker
 ./continue_container.sh
 ```
 or

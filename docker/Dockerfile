@@ -12,7 +12,7 @@ RUN apt-get update && apt-get upgrade -y && \
 # Install the necessary ROS packages for the project
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-tf ros-noetic-ddynamic-reconfigure ros-noetic-diagnostic-updater -y && \
-    apt-get install ros-noetic-realsense2-camera ros-noetic-realsense2-description -y && \
+    apt-get install ros-noetic-realsense2-camera ros-noetic-realsense2-description ros-noetic-rgbd-launch -y && \
     rm -rf /var/lib/apt/lists/*
 
 # For Intel GPU support
