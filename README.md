@@ -13,7 +13,7 @@
 ## 1. Introduction <a name="introduction"></a>
 
 Human and object detection with Intel D435 Depth Camera is applied by using `gb_visual_detection_3d` package, which build on top of `darknet_ros` package.
-- https://github.com/leggedrobotics/darknet_ros
+- https://github.com/leggedrobotics/darknet_ros (`Main` branch since it is already `Noetic`)
 - https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d/tree/noetic (`Noetic` branch)
 - https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d_msgs/tree/melodic (`Melodic` branch)
 - https://www.youtube.com/watch?v=JvAMI9OxQDU 
