@@ -94,3 +94,6 @@ rostopic echo /darknet_ros_3d/bounding_boxes
 ```
 Bonus: Bookmarked issue pages that helped me to debug
 - https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d/issues/15
+- https://github.com/leggedrobotics/darknet_ros/issues/25
+- https://stackoverflow.com/questions/55605052/why-is-the-output-video-too-slow-in-darknet
+- https://github.com/pjreddie/darknet/issues/80 
