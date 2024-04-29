@@ -92,6 +92,5 @@ To see the output in the ROS topic (T3)
 source /sabes_ws/darknet_ros_3D_v2/catkin_ws/devel/setup.bash
 rostopic echo /darknet_ros_3d/bounding_boxes
 ```
-
-If you encounter issues with running, you can check this link
+Bonus: Bookmarked issue pages that helped me to debug
 - https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d/issues/15
